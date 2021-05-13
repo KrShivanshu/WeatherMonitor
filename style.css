@@ -51,7 +51,7 @@ ul>li>span:first-child{
 }
 ul>li>span:last-child{
     font-size: 22px;
-    font-style: italic;
+    font-style: bold;
 }
 .date{
     padding: 30px;
