@@ -17,7 +17,14 @@
     border-radius: 12px;
     padding:20px 0;
     box-shadow: 5px 5px 25px #888888;
-    background: #d0e0e4;
+    background: #044255;
+}
+.tempContainer{
+    background: #f0f5f0;
+}
+
+.bottomContainer{
+    background: #ecebeb;
 }
 .date, .temperatureLabel{
     display: block;
