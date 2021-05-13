@@ -1,0 +1,62 @@
+.container{
+    display: flex;
+    background-image: url(./assets/img/sunset-sky.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.subContainer{
+    width: 500px;
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border-radius: 12px;
+    padding:20px 0;
+    box-shadow: 5px 5px 25px #888888;
+    background: #d0e0e4;
+}
+.date, .temperatureLabel{
+    display: block;
+    padding: 3px 20px;
+}
+.tempContainer{
+    border-bottom: 1px solid black;
+}
+ul{
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul>li{
+    list-style: none;
+
+}
+ul>li>span{
+    display:block;
+}
+ul>li>span:first-child{
+    padding-bottom: 15px;
+}
+ul>li>span:last-child{
+    font-size: 22px;
+    font-style: italic;
+}
+.date{
+    padding: 30px;
+    font-size: 25px;
+    font-style: italic;
+}
+.tempValue{
+  padding: 3px 2px 3px 20px;
+}
+sup{
+    font-size:15px
+}
+body{
+    margin: 0;
+}
