@@ -20,15 +20,10 @@ async function a() {
     let field2_Data = await getWeatherData(url.fields2);
     let field3_Data = await getWeatherData(url.fields3);
     let field4_Data = await getWeatherData(url.fields4);
-    const date = new Date(field1_Data.channel.updated_at);
+    const date = new Date(field1_Data.feeds[0].created_at);
     const month = date.toLocaleString('default', { month: 'long' });
     const year = date.getFullYear();
     const currentDate = date.getDate();
-    
-    console.log("field1_Data", field1_Data)
-    console.log("field2_Data", field2_Data.feeds[0].field2)
-    console.log("field3_Data", field3_Data.feeds[0].field3)
-    console.log("field4_Data", field4_Data.feeds[0].field4)
     aa(field1_Data.feeds[0].field1, field2_Data.feeds[0].field2, field3_Data.feeds[0].field3, field4_Data.feeds[0].field4, month,year,currentDate)
 }
 
