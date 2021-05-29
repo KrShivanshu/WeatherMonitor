@@ -14,7 +14,7 @@ async function getWeatherData(url) {
     }
 }
 
-async function a() {
+async function getData() {
     let url = getEnvVariables();
     let field1_Data = await getWeatherData(url.fields1);
     let field2_Data = await getWeatherData(url.fields2);
@@ -24,12 +24,12 @@ async function a() {
     const month = date.toLocaleString('default', { month: 'long' });
     const year = date.getFullYear();
     const currentDate = date.getDate();
-    aa(field1_Data.feeds[0].field1, field2_Data.feeds[0].field2, field3_Data.feeds[0].field3, field4_Data.feeds[0].field4, month,year,currentDate)
+    putData(field1_Data.feeds[0].field1, field2_Data.feeds[0].field2, field3_Data.feeds[0].field3, field4_Data.feeds[0].field4, month,year,currentDate)
 }
 
-a();
+getData();
 
-function aa(tempValue, humidityVal, pressVal, rainVal, monthName, year, date) {
+function putData(tempValue, humidityVal, pressVal, rainVal, monthName, year, date) {
     document.getElementsByClassName('tempValue')[0].innerText = Math.round(tempValue);
     document.getElementsByClassName('pressVal')[0].innerText = Math.round(pressVal) + " mb";
     document.getElementsByClassName('rainVal')[0].innerText = Math.round(rainVal) + "%";
